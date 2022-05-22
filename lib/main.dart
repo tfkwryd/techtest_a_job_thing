@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oktoast/oktoast.dart';
 import 'package:provider/provider.dart';
 import 'package:techtest/src/injector.dart';
 import 'package:techtest/src/config/routers/routers.dart';
@@ -13,17 +14,19 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (_) => ConnectivityProvider()),
-        ],
+      providers: [
+        ChangeNotifierProvider(create: (_) => ConnectivityProvider()),
+      ],
+      child: OKToast(
         child: MaterialApp(
           title: 'techtest',
           routes: Routes.route,
           initialRoute: '/',
-        ));
+        ),
+      ),
+    );
   }
 }
