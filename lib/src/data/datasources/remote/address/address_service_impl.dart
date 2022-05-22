@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:techtest/src/core/constants/service_constants.dart';
 import 'package:techtest/src/domain/datasources/remote/address/address_service.dart';
 
-class AddressImplService implements AddressService {
+class AddressServiceImpl implements AddressService {
   @override
   Future<Response> getList() async {
     try {
