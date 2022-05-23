@@ -9,7 +9,7 @@
 ## techtest_a_job_thing
 
 ### What kind of architecture did you use?
-- for architecture I follow uncle bob's clean architecture concept, the version is simpler and sufficient for scalable projects
+- for architecture like MVC but more divided, I follow uncle bob's clean architecture concept, the version is simpler and sufficient for scalable projects
 
 ### What libraries did you add to the app? What are they used for? if you not rely the other library tell us why?
 - connectivity_plus: for detect stream network status, because flutter favorite and work like i want
